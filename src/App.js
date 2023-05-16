@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import UseFetch from "./useFetch";
+// import './App.css';
+import React from 'react'
+import Title from "./title";
+import SerchArea from "./search";
+import Home from "./home";
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 function App() {
   return (
+  <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title/>
+      <SerchArea/>
+      
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+
+          <Route path ='/home/:title' element={<Home />}/>
+      </Routes>
+      
+      
     </div>
+     </Router> 
   );
 }
 
 export default App;
+// http://www.omdbapi.com/?i=tt3896198&apikey=7aa2fa38
+// 7aa2fa38
