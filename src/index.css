@@ -1,6 +1,7 @@
 *{
   margin:0;
   background-color: rgb(26, 23, 23);
+  /* z-index: -1; */
 }
 /*Site Name*/
 .title h1{
@@ -20,9 +21,10 @@
 /*Search bar*/
 .searchArea{
   display: flex;
+  flex-direction: column;
+
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
 }
 .searchArea input{
   
@@ -36,12 +38,12 @@
   width: 30vw;
 
 }
-.searchArea a{
-/* background-color: red; */
+/* .searchArea a{
+
 position: relative;
   right: 50px;
   background-color: rgb(21, 20, 20);
-}
+} */
 .searchArea a:hover{
   color: rgb(211, 146, 123);
   cursor: pointer;
@@ -63,7 +65,7 @@ svg.icon:hover{
   /* justify-content: space-evenly; */
   /* align-items: center; */
   /* width: 800px; */
-  margin: 100px;
+  margin-top: 100px;
 }
 
 .movies-list{
@@ -77,7 +79,7 @@ flex-wrap: wrap;
 .movie-box {
   margin: 10px;
   width: 200px;
-  height: 376px;
+  height: 450px;
   border: 2px solid #2e2a2a;
   border-radius: 10px;
   /* background-color: black; */
@@ -121,9 +123,16 @@ flex-wrap: wrap;
   text-align: left;
 }
 .movies-list img{
-  width: 200px;
+  width: 199px;
   height: 250px;
   border-radius: 10px 10px 0px 0px;
   
   /* padding: 10px; */
+}
+
+/* footer */
+.footer{
+  display: "flex";
+  flex-direction: column;
+  align-items: center;
 }
