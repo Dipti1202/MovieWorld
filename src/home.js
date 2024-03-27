@@ -7,21 +7,21 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Home = () => {
     const { title } = useParams();
-    
+
     const { isPending, error, movie } = UseFetch(title);
 
     return (
         <Container>
-        <div className="home">
-            {error && <div>{error}</div>}
-            {isPending && <div className="pending">Loading...</div>}
-            {movie && <MoviesList movies={movie} />}
-            
-            
-        </div>
-        <Container display="flex" sx={{mt:"20px",padding:"10px"}}>
+            <div className="home">
+                {error && <div>{error}</div>}
+                {isPending && <div className="pending">Loading...</div>}
+                {movie && <MoviesList movies={movie} />}
+
+
+            </div>
+            <Container display="flex" sx={{ mt: "20px", padding: "10px" }}>
                 <Box >
-                    <Typography variant="h2" align="center" sx={{color:"rgb(211, 146, 123)",display:{xs:"none",sm:"block"}}}>MovieWorld</Typography>
+                    <Typography variant="h2" align="center" sx={{ color: "rgb(211, 146, 123)", display: { xs: "none", sm: "block" } }}>MovieWorld</Typography>
                 </Box>
                 <Box >
                     <Typography variant="body1" color="white" align="center">&copy;copyright </Typography>
@@ -32,7 +32,7 @@ const Home = () => {
                         Made with ❤️
                     </Typography>
                 </Box>
-                
+
             </Container>
         </Container>
     );

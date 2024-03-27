@@ -6,9 +6,6 @@
 /*Site Name*/
 .title h1{
   color: rgb(146, 94, 53);
-  /* color: rgb(0, 0, 0); */
-  /* color: -webkit-linear-gradient(#eee, #333); */
-  /* linear-gradient:(to bottom left, #553c9a, #ee4b2b); */
   background: -webkit-linear-gradient(#e5def6, #641606);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,10 +18,10 @@
 /*Search bar*/
 .searchArea{
   display: flex;
-  flex-direction: column;
-
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .searchArea input{
   
@@ -35,15 +32,10 @@
   font-size: large;
   border: 0;
   border-radius: 30px;
-  width: 30vw;
+  width: 100%;
 
 }
-/* .searchArea a{
 
-position: relative;
-  right: 50px;
-  background-color: rgb(21, 20, 20);
-} */
 .searchArea a:hover{
   color: rgb(211, 146, 123);
   cursor: pointer;
@@ -84,6 +76,8 @@ flex-wrap: wrap;
   border-radius: 10px;
   /* background-color: black; */
 }
+
+
 .pending{
   display: flex;
 
@@ -122,13 +116,7 @@ flex-wrap: wrap;
   color: rgb(211, 146, 123);
   text-align: left;
 }
-.movies-list img{
-  width: 199px;
-  height: 250px;
-  border-radius: 10px 10px 0px 0px;
-  
-  /* padding: 10px; */
-}
+
 
 /* footer */
 .footer{
@@ -136,3 +124,6 @@ flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
+
+/* background */
+
