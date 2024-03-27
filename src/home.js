@@ -1,13 +1,14 @@
 import { Box, Container, CssBaseline, Typography } from "@mui/material";
 import MoviesList from "./moviesList";
 import UseFetch from "./useFetch";
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Home = () => {
     const { title } = useParams();
-
+    
+    
     const { isPending, error, movie } = UseFetch(title);
 
     return (
