@@ -11,12 +11,14 @@ const Home = () => {
     
     const { isPending, error, movie } = UseFetch(title);
 
+    
+
     return (
         <Container>
             <div className="home">
-                {error && <div>{error}</div>}
+                {error && <div className="pending">{error}</div>}
                 {isPending && <div className="pending">Loading...</div>}
-                {movie && <MoviesList movies={movie} />}
+                {movie? <MoviesList movies={movie} />:<div className="pending">Ooops.. it seems no movie is available.</div>}
 
 
             </div>

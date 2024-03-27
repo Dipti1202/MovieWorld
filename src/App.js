@@ -5,6 +5,7 @@ import Title from "./title";
 import SerchArea from "./search";
 import Home from "./home";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import ErrorPage from './ErrorPage';
 function App() {
   return (
     <Router>
@@ -15,6 +16,8 @@ function App() {
           <Route exact path='/' element={<Home />} />
 
           <Route path='/home/:title' element={<Home />} />
+          <Route path='*' element={<ErrorPage />} />
+
         </Routes>
       </div>
     </Router>

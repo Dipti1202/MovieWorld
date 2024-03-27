@@ -80,7 +80,7 @@ flex-wrap: wrap;
   align-items: center;
   margin: auto;
   color: rgb(211, 146, 123);
-
+  text-align: center;
   font-size: 30px;
 }
 .shadow{
@@ -121,4 +121,9 @@ flex-wrap: wrap;
 }
 
 /* background */
+
+/* error page */
+/* .error-heading{
+font-size:10rem;
+} */
 

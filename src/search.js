@@ -22,9 +22,8 @@ const SerchArea = () => {
 
     const handleClick = () => {
         if(searchTerm===''){
-            console.log("empty")
+            console.log("Enter movie name")
         }
-        console.log(searchTerm)
         if(searchTerm!=''){           
             navigate(`/home/${searchTerm}`);     
         }

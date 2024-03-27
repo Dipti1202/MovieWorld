@@ -1,6 +1,9 @@
 import { Box, Card, CardContent, CardHeader, CardMedia, Container, Grid, Typography } from "@mui/material";
 
 const MoviesList = ({ movies }) => {
+
+    // console.log(movies)
+
     return (
         <Container sx={{margin:{xs:0,sm:2,md:3}}}>
  <div className="movies-list container">
